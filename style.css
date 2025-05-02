@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./imagess.avif'); /* Make sure the image path is correct */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #2c3e50;
+}
+
+/* Light white overlay for background image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* Light white overlay */
+  z-index: 0;
+}
+
+/* Centering content */
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 60px 30px; /* Increased padding for bigger box */
+  width: 100%;
+  max-width: 800px; /* Increased max-width for bigger box */
+  background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+/* Heading styling */
+h2 {
+  font-size: 2rem; /* Adjusted to medium size */
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Form input fields */
+input {
+  width: 100%;
+  padding: 14px; /* Slightly bigger padding */
+  margin: 12px 0; /* Increased margin for spacing */
+  font-size: 18px; /* Increased font size */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit button styling */
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 18px 35px; /* Increased padding for larger button */
+  font-size: 20px; /* Increased font size */
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Back link styling */
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-size: 20px; /* Increased font size for the link */
+  display: block;
+  margin-top: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button container (used in Dashboard for buttons) */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+  margin-top: 30px;
+}
+
+/* Button styling */
+.button {
+  background-color: #3498db;
+  color: white;
+  padding: 18px 35px; /* Increased padding for larger button */
+  font-size: 20px; /* Increased font size */
+  border: none;
+  border-radius: 8px;
+  width: 250px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Info box styling */
+.info-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 50px auto 0; /* Increased margin to separate from content */
+  padding: 30px; /* Increased padding for a bigger box */
+  max-width: 900px; /* Increased max-width for larger box */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  color: #333;
+}
+
+.info-box h2 {
+  margin-bottom: 15px;
+  font-size: 26px; /* Increased font size for the heading */
+}
+
+.info-box p {
+  font-size: 20px; /* Increased font size for paragraph */
+  margin: 15px 0; /* Increased margin for better spacing */
+}
